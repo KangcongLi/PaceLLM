@@ -180,4 +180,21 @@ pip install -e ".[dev]"
 pytest
 ```
 
-Before publishing, choose and add a project license (`LICENSE`) that matches the authors' intended distribution terms.
+## Citation
+
+If you find this repository useful, please cite our paper:
+
+```bibtex
+@article{li2026pacellm,
+  title={PaceLLM: Brain-Inspired Large Language Models for Long-Context Understanding},
+  author={Li, Kangcong and Ye, Peng and Tu, Chongjun and Zhang, Lin and Song, Chunfeng and Wu, Jiamin and Yang, Tao and Zheng, Qihao and Chen, Tao},
+  journal={Advances in Neural Information Processing Systems},
+  volume={38},
+  pages={85647--85672},
+  year={2026}
+}
+```
+
+## License
+
+This project is released under the Apache License 2.0. See `LICENSE` for details.
