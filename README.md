@@ -29,8 +29,6 @@ PaceLLM/
 └── .gitignore                       # Keeps caches, checkpoints and results out of Git
 ```
 
-Local experiment folders such as `AMB/`, `lkc/`, downloaded checkpoints, benchmark outputs, `.cache/`, `__pycache__/` and editor/OS files are intentionally excluded from this clean GitHub-ready folder.
-
 ## Method Overview
 
 ### Activation Memory Bank (AMB)
