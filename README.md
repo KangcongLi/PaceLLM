@@ -23,7 +23,6 @@ PaceLLM/
 ├── examples/
 │   └── enable_amb_qwen2.py          # Minimal AMB usage example
 ├── tests/                           # Lightweight unit tests
-├── docs/                            # Paper / method notes copied from the working folder
 ├── legacy/                          # Original experimental Qwen2 reference implementation
 ├── pyproject.toml                   # Package metadata and dependencies
 ├── requirements.txt                 # Runtime dependency shortcut
@@ -171,12 +170,6 @@ enable_amb_for_qwen2(model, layers=[12, 26])
 - `reset_amb_memory`: clears all AMB modules before a new independent generation task.
 - `CorticalClusteringConfig`: CEC clustering hyperparameters.
 - `cluster_and_rearrange_state_dict`: applies CEC to all discovered gated-MLP triplets in a state dict.
-
-## Reproducibility Notes
-
-The files in `pacellm/` are the cleaned reusable implementation. The original working folder also contained local experiment code, benchmark outputs, downloaded model/tokenizer files, caches and third-party source trees. Those artifacts are not needed for a public code release and are excluded here.
-
-The summarized experimental claims from the accompanying method notes include gains on long-context tasks, but full reproduction still requires the exact model checkpoints, datasets, evaluation scripts and decoding settings used by the authors.
 
 ## Development
 
