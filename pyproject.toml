@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pacellm"
+version = "0.1.0"
+description = "PaceLLM components for FFN-level activation memory and cortical expert clustering."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "PaceLLM Authors"}
+]
+dependencies = [
+  "torch>=2.0",
+  "transformers>=4.40",
+  "accelerate>=0.28",
+  "safetensors>=0.4"
+]
+
+[project.optional-dependencies]
+clustering = ["k-means-constrained>=0.7"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+pacellm-cluster-qwen2 = "pacellm.cli.cluster_qwen2_mlp:main"
+
+[tool.setuptools]
+packages = ["pacellm", "pacellm.cli"]
+py-modules = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
